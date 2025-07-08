@@ -19,7 +19,7 @@ X, y = make_classification(
 )
 
 #Crear Dataframe
-columnas = [f'feature_{i+i}' for i in range(X.shape[1])]
+columnas = [f'feature_{i+1}' for i in range(X.shape[1])]
 df = pd.DataFrame(X, columns=columnas)
 df['moroso'] = y
 
